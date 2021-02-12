@@ -1,0 +1,59 @@
+Delaration a pointer more than once may cause ____
+A.Error		B.Abort
+C.Trap		D.Null
+Answer : Trap [Option : C]
+#
+An expression A.B in C++ means ____
+A.A is member of object B	B.B is member of Object A
+C.Product of A and B		D.None of these
+Answer : B is member of Object A [Option : B]
+#
+A C++ code line ends with ___
+A.A Semicolon (;)	B.A Fullstop(.)
+C.A Comma (,)		D.A Slash (/)
+Answer : A Semicolon (;) [Option : A]
+#
+______ function is used to allocate space for array in memory.
+A.malloc()	B.realloc()
+C.alloc()	D.calloc()
+Answer : calloc() [Option : D]
+#
+Default constructor has ____ arguments.
+A.No argument	B.One Argument
+C.Two Argument	D.None of these
+Answer : No argument [Option : A]
+#
+A class whos objects can not be created is known as _____
+A.Absurd Class	B.Dead Class
+C.Super Class	D.Abstract Class
+Answer : Abstract Class [Option : D]
+#
+Which class allows only one object to be created.
+A.Nuclear Family Class	B.Abstruct Class
+C.Singleton Class	D.Numero Uno Class
+Answer : Singleton Class [Option : C]
+#
+Reusability of code in C++ is achieved through ____
+A.Polymorphism		B.Inheritance
+C.Encapsulation		D.Both A and B
+Answer : Inheritance [Option : B]
+#
+In CPP, members of a class are ______ by default.
+A.Public	B.Private
+C.Protected	D.Static
+Answer : Private [Option : B]
+#
+In C++ Program, inline fuctions are expanded during ____
+A.Run Time	B.Compile Time
+C.Debug Time	D.Coding Time
+Answer : Run Time [Option : A]
+#
+To perform file input / output operation in C++, we must include which header file ?
+A.<fiostream>	B.<ifstream>
+C.<ofstream>	D.<fstream>
+Answer : <fstream> [Option : D]
+#
+An exception in C++ can be generated using which keywords.
+A.thrown	B.threw
+C.throw		D.throws
+Answer : throw [Option : C]

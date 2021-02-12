@@ -1,0 +1,49 @@
+Who is known as the father of C Language ?
+A.James A. Sosling	B.Vjarne Stroustrup
+C.Dennis Ritchie	D.Dr. E. F. Codd
+Answer : Dennis Ritchie [Option : C]
+#
+C Language was developed in the year ____
+A.1970	B.1975
+C.1980	D.1985
+Answer : 1970 [Option : A]
+#
+Which one is not a reserve keyword in C Language?
+A.auto	B.main
+C.case	D.register
+Answer : main [Option : B]
+#
+A C variable name can start with a ____
+A.Number	B.Plus Sign (+)
+C.Underscore	D.Asterisk (*)
+Answer : Underscore [Option : C]
+#
+Prototype of a function means _____
+A.Name of Function		B.Output of Function
+C.Declaration of Function	D.Input of a Function
+Answer : Declaration of Function [Option : C]
+#
+Name the loop that executes at least once.
+A.For		B.If
+C.do-while	D.while
+Answer : do-while [Option : C]
+#
+Far pointer can access _____
+A.Single memory location	B.No memory location
+C.All memory location		D.First and Last Memory Address
+Answer : All memory location [Option : C]
+#
+A pointer pointing to a memory location of the variable even after deletion of the variable is known as _____
+A.far pointer	B.dangling pointer
+C.null pointer	D.void pointer
+Answer : dangling pointer [Option : B]
+#
+An uninitialized pointer in C is called ___
+A.Constructor	B.dangling pointer
+C.Wild Pointer	D.Destructor
+Answer : Wild Pointer [Option : C]
+#
+A pointer that is pointing to NOTHING is called ____
+A.VOID Pointer	B.DANGLING Pointer
+C.NULL Pointer	D.WILD Pointer
+Answer : NULL Pointer [Option : C]
