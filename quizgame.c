@@ -89,21 +89,251 @@ int main()
 			else if(toupper(getch())=='J')
 			goto javaquiz;
 			else
-			goto mainhome;
+			{
+				printf("\n\nInvalid choice");
+				goto mainhome;
+			}
         }
 	else
 		{
         goto mainhome;
        system("cls");
        }
-javaquiz:
+	    
+cquiz:
      system("cls");
      count=0;
+     //srand(time(NULL));
      for(i=1;i<=3;i++)
      {
     system("cls");
+    //r1=rand()%7;
      r1=i;
+	switch(r1)
+		{
+		case 1:
+		printf("\n\nWho is known as the father of C Language ?");
+		printf("\n\nA.James A. Gosling\t\tB.Vjarne Stroustrup\n\nC.Dennis Ritchie\t\tD.Dr. E. F. Codd");
+		if (toupper(getch())=='C')
+			{
+			    printf("\n\nCorrect!!!");count++;
+			    getch();
+			    break;
+}
+		else
+		       {
+		           printf("\n\nWrong!!! The correct answer is C.Dennis Ritchie");
+		           getch();
+		       break;
+		       }
 
+        case 2:
+		printf("\n\n\nC Language was developed in the year ____");
+		printf("\n\nA.1970\t\tB.1975\n\nC.1980\t\tD.1985");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is A.1970");
+		       getch();
+		       break;}
+
+        case 3:
+		printf("\n\n\nWhich one is not a reserve keyword in C Language?");
+		printf("\n\nA.auto\t\tB.main\n\nC.case\t\tD.register");
+		if (toupper(getch())=='B')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.main");
+		       getch();
+		       break;}
+
+        case 4:
+		printf("\n\n\nA C variable name can start with a ____");
+		printf("\n\nA.Number\t\tB.Plus sign(+)\n\nC.Underscore\t\tD.Asterisk(*)");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Underscore");
+		       getch();
+		       break;}
+
+        case 5:
+        printf("\n\n\nPrototype of a function means _____");
+        printf("\n\nA.Name of fucntion\t\tB.Output of function\n\nC.Declaration of function\t\tD.Input of a function");
+        if (toupper(getch())=='C')
+               {printf("\n\nCorrect!!!");count++;
+               getch();
+                break;}
+        else
+		       {printf("\n\nWrong!!! The correct answer is C.Declaration of function");
+		       getch();
+		       break;}
+
+        case 6:
+		printf("\n\n\nName the loop that executes at least once.");
+		printf("\n\nA.For\t\tB.If\n\nC.Do-while\t\tD.While");
+		if (toupper(getch())=='C' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Do-while");
+		       getch();
+		       break;}}
+		       }
+
+	if(count>=2)
+	{goto test;}
+	else
+	{
+	system("cls");
+	printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
+	getch();
+	goto mainhome;
+	}
+     test:
+     system("cls");
+     printf("\n\n\t*** CONGRATULATION %s you are eligible to play the Game ***",playername);
+     printf("\n\n\n\n\t!Press any key to Start the Game!");
+     if(toupper(getch())=='p')
+		{goto cgame;}
+cgame:
+     countr=0;
+     for(i=1;i<=10;i++)
+     {system("cls");
+     r=i;
+
+     switch(r)
+		{
+		case 1:
+		printf("\n\nA pointer that is pointing to NOTHING is called ____");
+		printf("\n\nA.Void pointer\t\tB.Dangling pointer\n\nC.Null pointer\t\tD.Wild pointer");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;getch();}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Null pointer");getch();
+		       goto score;
+		       break;}
+
+		case 2:
+		printf("\n\n\nWhich keyword is used to come out of a loop only for that iteration?");
+		printf("\n\nA.break\t\tB.continue\n\nC.return\t\tD.none of these");
+		if (toupper(getch())=='B')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.continue");getch();
+		      goto score;
+		       break;
+		       }
+
+        case 3:
+		printf("\n\n\nAn uninitialized pointer in C is called ___ ");
+		printf("\n\nA.Constructor\t\tB.Dangling pointer\n\nC.Wild pointer\t\tD.Destructor");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Wild pointer");getch();
+		       goto score;
+		       break;}
+
+        case 4:
+		printf("\n\n\nWhich of the following function declaration is illegal?");
+		printf("\n\nA.int 1bhk(int);\t\tB.int 1bhk(int a);\n\nC.int 2bhk(int*, int []);\t\tD.All of the above");
+		if (toupper(getch())=='D')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {
+                printf("\n\nWrong!!! The correct answer is D.All of the above");getch();
+		       goto score;
+		       break;
+		       }
+
+        case 5:
+		printf("\n\n\nWhich of the following is not possible statically in C?");
+		printf("\n\nA.Jagged array\t\tB.Rectangular array\n\nC.Cuboidal array\t\tD.Multidimensional array");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");countr++;getch(); break;}
+		else
+		       {
+		           printf("\n\nWrong!!! The correct answer is A.Jagged array");
+		       getch();
+		       goto score;
+		       break;
+		       }
+
+		case 6:
+		printf("\n\n\nThe maximum number of characters to be printed is specified by __________");
+		printf("\n\nA.precision\t\tB.width\n\nC.length\t\tD.flags");
+		if (toupper(getch())=='A' )
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is A.precision");goto score;
+		       getch();
+		       break;}
+
+        case 7:
+		printf("\n\n\nString operation such as strcat(s, t), strcmp(s, t), strcpy(s, t) and strlen(s) heavily rely upon.");
+		printf("\n\nA.Presence of NULL character\t\tB.Presence of new-line character\n\nC.Presence of any escape sequence\t\tD.None of the mentioned");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is A.Presence of NULL character");getch();
+		       goto score;
+		       break;}
+
+        case 8:
+		printf("\n\n\nWhich of the following function compares 2 strings with case-insensitively?");
+		printf("\n\nA. strcmp(s, t)\t\tB.strcmpcase(s, t)\n\nC.strcasecmp(s,t)\t\tD.strchr(s, t)");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");countr++;getch(); break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.strcasecmp(s,t)");getch();
+		       goto score;
+		       break;}
+
+        case 9:
+		printf("\n\n\nfgetc, getc, getchar are all declared in ________");
+		printf("\n\nA.stdio.h\t\tB.ctype.h\n\nC.assert.h\t\tD.stdarg.h");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");countr++; getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is A.stdio.h");getch();
+		       goto score;
+		       break;}
+
+		case 10:
+		printf("\n\n\nThe data structure used to implement recursive function calls _____________");
+		printf("\n\nA.Array\t\tB.Linked List\n\nC.Binary tree\t\tD.Stack");
+		if (toupper(getch())=='D')
+			{printf("\n\nCorrect!!!");countr++; getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is D.Stack");getch();goto score;
+		       break;}}}
+      
+      
+javaquiz:
+     system("cls");
+     count=0;
+     //srand(time(NULL));
+     for(i=1;i<=3;i++)
+     {
+    system("cls");
+     //r1=rand()%7;
+	r1=i;
 
      switch(r1)
 		{
