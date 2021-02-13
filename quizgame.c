@@ -62,14 +62,15 @@ int main()
     printf("\n -------------------------------------------------------------------------");
     printf("\n >> There are 2 rounds in this Quiz Game,WARMUP ROUND & CHALLANGE ROUND");
     printf("\n >> In warmup round you will be asked a total of 3 questions to test your");
-    printf("\n    general knowledge. You are eligible to play the game if you give atleast 2");
-    printf("\n    right answers, otherwise you can't proceed further to the Challenge Round.");
-    printf("\n >> Your game starts with CHALLANGE ROUND. In this round you will be asked a");
+    printf("\n    general knowledge on a programming language. You are eligible to play ");
+    printf("\n    the game if you give atleast 2 right answers, otherwise you can't ");
+    printf("\n    proceed further to the Challenge Round.");
+    printf("\n >> Your game starts with CHALLENGE ROUND. In this round you will be asked a");
     printf("\n    total of 10 questions. Each right answer will be awarded $100,000!");
     printf("\n    By this way you can win upto ONE MILLION cash prize!!!!!..........");
     printf("\n >> You will be given 4 options and you have to press A, B ,C or D for the");
     printf("\n    right option.");
-    printf("\n >> You will be asked questions continuously, till right answers are given");
+    printf("\n >> You will be asked questions continuously, till right answers are given.");
     printf("\n >> No negative marking for wrong answers!");
     printf("\n\n\t!!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
     printf("\n\n\n Press Y  to start the game!\n");
@@ -95,6 +96,109 @@ int main()
         goto mainhome;
        system("cls");
        }
+javaquiz:
+     system("cls");
+     count=0;
+     for(i=1;i<=3;i++)
+     {
+    system("cls");
+     r1=i;
+
+
+     switch(r1)
+		{
+		case 1:
+		printf("\n\nWho is known as father of Java Programming Language?");
+		printf("\n\nA.James Gosling\t\tB.M. P Java\n\nC.Charel Babbage\t\tD.Blais Pascal");
+		if (toupper(getch())=='A')
+			{
+			    printf("\n\nCorrect!!!");count++;
+			    getch();
+			    break;
+}
+		else
+		       {
+		           printf("\n\nWrong!!! The correct answer is A.James Gosling");
+		           getch();
+		       break;
+		       }
+
+        case 2:
+		printf("\n\n\nIn Java code, the line that begins with /* and ends with */ is known as?");
+		printf("\n\nA.Multiline comment\t\tB.Single line comment\n\nC.Both A & B\t\tD.None of these");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is A.Multiline comment");
+		       getch();
+		       break;}
+
+        case 3:
+		printf("\n\n\nWhich of the following are not Java keywords ?");
+		printf("\n\nA.double\t\tB.switch\n\nC.then\t\tD.instanceof");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.then");
+		       getch();
+		       break;}
+
+        case 4:
+		printf("\n\n\nWhich of these is returned by Greater Than, Less Than and Equal To (i.e Relational) operator ?");
+		printf("\n\nA.Float\t\tB.Integer\n\nC.Boolean\t\tD.Double");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Boolean");
+		       getch();
+		       break;}
+
+        case 5:
+        printf("\n\n\nWhat is the full form of JVM ?");
+        printf("\n\nA.Java Very large Machine\t\tB.Java Verified Machine\n\nC.Java Very small Machine\t\tD.Java Virtual Machine");
+        if (toupper(getch())=='D')
+               {printf("\n\nCorrect!!!");count++;
+               getch();
+                break;}
+        else
+		       {printf("\n\nWrong!!! The correct answer is D.Java Virtual Machine");
+		       getch();
+		       break;}
+
+        case 6:
+		printf("\n\n\nWhich of the following are not Java modifiers?");
+		printf("\n\nA.public\t\tB.private\n\nC.friendly\t\tD.transient");
+		if (toupper(getch())=='C' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.friendly");
+		       getch();
+		       break;}}
+		       }
+
+	if(count>=2)
+	{goto test;}
+	else
+	{
+	system("cls");
+	printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
+	getch();
+	goto mainhome;
+	}
+     test:
+     system("cls");
+     printf("\n\n\t*** CONGRATULATION %s you are eligible to play the Game ***",playername);
+     printf("\n\n\n\n\t!Press any key to Start the Game!");
+     if(toupper(getch())=='p')
+		{goto game;}
 
 home:
      system("cls");
