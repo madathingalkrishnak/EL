@@ -199,7 +199,7 @@ javaquiz:
      printf("\n\n\n\n\t!Press any key to Start the Game!");
      if(toupper(getch())=='p')
 		{goto javagame;}
-game:
+javagame:
      countr=0;
      for(i=1;i<=10;i++)
      {system("cls");
