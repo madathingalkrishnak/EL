@@ -323,7 +323,230 @@ cgame:
 		else
 		       {printf("\n\nWrong!!! The correct answer is D.Stack");getch();goto score;
 		       break;}}}
-      
+      cppquiz:
+     system("cls");
+     count=0;
+     for(i=1;i<=3;i++)
+     {
+    system("cls");
+     r1=i;
+
+
+     switch(r1)
+		{
+		case 1:
+		printf("\n\nC++ code line ends with ___");
+		printf("\n\nA.A semicolon(;)\t\tB.A fullstop(.)\n\nC.A comma(,)\t\tD.A slash(/)");
+		if (toupper(getch())=='A')
+			{
+			    printf("\n\nCorrect!!!");count++;
+			    getch();
+			    break;
+}
+		else
+		       {
+		           printf("\n\nWrong!!! The correct answer is A.A semicolon(;)");
+		           getch();
+		       break;
+		       }
+
+        case 2:
+		printf("\n\n\n____ is the smallest individual unit in a program.");
+		printf("\n\nA.Variable\t\tB.Control\n\nC.Character\t\tD.Token");
+		if (toupper(getch())=='D')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is D.Token");
+		       getch();
+		       break;}
+
+        case 3:
+		printf("\n\n\nWhich of the following is not a C++ keyword?");
+		printf("\n\nA.this\t\tB.new\n\nC.cont\t\tD.if");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.cont");
+		       getch();
+		       break;}
+
+        case 4:
+		printf("\n\n\n____ Operator requires two operands.");
+		printf("\n\nA.Logical\t\tB.Binary\n\nC.Unary\t\tD.Ternary");
+		if (toupper(getch())=='B')
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.Binary");
+		       getch();
+		       break;}
+
+        case 5:
+        printf("\n\n\nTo perform file input / output operation in C++, we must include which header file ?");
+        printf("\n\nA.<fiostream>\t\tB.<ifstream>\n\nC.<ofstream>\t\tD.<fstream>");
+        if (toupper(getch())=='D')
+               {printf("\n\nCorrect!!!");count++;
+               getch();
+                break;}
+        else
+		       {printf("\n\nWrong!!! The correct answer is D.<fstream>");getch();
+		       break;}
+
+        case 6:
+		printf("\n\n\nWhich of the following is a correct identifier in C++?");
+		printf("\n\nA.7var_name\t\tB.7VARNAME\n\nC.VAR_1234\t\tD.$var_name");
+		if (toupper(getch())=='C' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.VAR_1234");
+		       getch();
+		       break;}}
+		       }
+
+	if(count>=2)
+	{goto test;}
+	else
+	{
+	system("cls");
+	printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME, BETTER LUCK NEXT TIME");
+	getch();
+	goto mainhome;
+	}
+     test:
+     system("cls");
+     printf("\n\n\t*** CONGRATULATION %s you are eligible to play the Game ***",playername);
+     printf("\n\n\n\n\t!Press any key to Start the Game!");
+     if(toupper(getch())=='p')
+		{goto game;}
+cppgame:
+     countr=0;
+     for(i=1;i<=10;i++)
+     {system("cls");
+     r=i;
+
+     switch(r)
+		{
+		case 1:
+		printf("\n\nDelaration a pointer more than once may cause ____");
+		printf("\n\nA.Error\t\tB.Abort\n\nC.Trap\t\tD.Null");
+		if (toupper(getch())=='C')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;getch();}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Trap");getch();
+		       goto score;
+		       break;}
+
+		case 2:
+		printf("\n\n\nAn expression A.B in C++ means ____");
+		printf("\n\nA.A is member of object B\t\tB.B is member of object A\n\nC.Product of A and B\t\tD.None of these");
+		if (toupper(getch())=='B')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.B is member of object A");getch();
+		      goto score;
+		       break;
+		       }
+
+        case 3:
+		printf("\n\n\n______ function is used to allocate space for array in memory.");
+		printf("\n\nA.malloc()\t\tB.realloc()\n\nC.alloc()\t\tD.calloc()");
+		if (toupper(getch())=='D')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is D.calloc()");getch();
+		       goto score;
+		       break;}
+
+        case 4:
+		printf("\n\n\nDefault constructor has ____ arguments.");
+		printf("\n\nA.No argument\t\tB.One argument\n\nC.Two arguments\t\tD.None of these");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {
+                printf("\n\nWrong!!! The correct answer is A.No argument");getch();
+		       goto score;
+		       break;
+		       }
+
+        case 5:
+		printf("\n\n\nIn C++ Program, inline fuctions are expanded during ____");
+		printf("\n\nA.Run time\t\tB.Compile time\n\nC.Debug time\t\tD.Coding time");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");countr++;getch(); break;}
+		else
+		       {
+		           printf("\n\nWrong!!! The correct answer is A.Run time");
+		       getch();
+		       goto score;
+		       break;
+		       }
+
+		case 6:
+		printf("\n\n\nC++ was developed by ___");
+        printf("\n\nA.Thomas Kurtz\t\tB.John Kemeny\n\nC.Bjarne Stroustrup\t\tD.James Gosling");
+        if (toupper(getch())=='C')
+               {printf("\n\nCorrect!!!");countr++;
+               getch();
+                break;}
+        else
+		       {printf("\n\nWrong!!! The correct answer is C.Bjarne Stroustrup");
+		       getch();
+			goto score;
+		       break;}
+        case 7:
+		printf("\n\n\nWhich of the following gives the memory address of the first element in array?");
+		printf("\n\nA.array[0];\t\tB.array[1];\n\nC.array(2);\t\tD.array;");
+		if (toupper(getch())=='D')
+			{printf("\n\nCorrect!!!");countr++;getch();
+			 break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is D.array;");getch();
+		       goto score;
+		       break;}
+
+        case 8:
+		printf("\n\n\nWhat does ‘\a’ escape code represent?");
+		printf("\n\nA.alert\t\tB.backslash\n\nC.tab\t\tD.form feed");
+		if (toupper(getch())=='A')
+			{printf("\n\nCorrect!!!");countr++;getch(); break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is A.alert");getch();
+		       goto score;
+		       break;}
+
+        case 9:
+		printf("\n\n\nThe switch statement is also called as?");
+		printf("\n\nA.choosing structure\t\tB.selective structure\n\nC.certain structure\t\tD.bitwise structure");
+		if (toupper(getch())=='B')
+			{printf("\n\nCorrect!!!");countr++; getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.selective structure");getch();
+		       goto score;
+		       break;}
+
+		case 10:
+		printf("\n\n\nWhich of the following feature is used in function overloading and function with default argument?");
+		printf("\n\nA.Encapsulation\t\tB.Polymorphism\n\nC.Abstraction\t\tD.Modularity");
+		if (toupper(getch())=='B')
+			{printf("\n\nCorrect!!!");countr++; getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.Polymorphism");getch();goto score;
+		       break;}}}
+
       
 javaquiz:
      system("cls");
